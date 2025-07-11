@@ -1,0 +1,14 @@
+%%[
+VAR @genero
+SET @genero = [Genero]
+]%%
+
+%%[ IF @genero == "Mujer" THEN ]%%
+<p>Hemos seleccionado bolsos y accesorios especialmente pensados para ti.</p>
+
+%%[ ELSEIF @genero == "Hombre" THEN ]%%
+<p>Explora nuestra colección de mochilas, carteras y travel kits para hombres.</p>
+
+%%[ ELSE ]%%
+<p>Descubre nuestros productos más populares de la temporada.</p>
+%%[ ENDIF ]%%

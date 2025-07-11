@@ -1,0 +1,8 @@
+%%[
+VAR @producto, @firstName, @subscriberKey
+SET @subscriberKey = _subscriberkey
+SET @producto = Lookup("ejemplo_data_extension", "ProductoFavorito", "SubscriberKey", @subscriberKey)
+SET @firstName = Lookup("ejemplo_data_extension", "FirstName", "SubscriberKey", @subscriberKey)
+]%%
+
+<p>Hola %%=v(@firstName)=%%, tu producto favorito es: <strong>%%=v(@producto)=%%</strong>.</p>
