@@ -1,0 +1,79 @@
+%%[
+VAR @firstName
+SET @firstName = [FirstName]
+]%%
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Novedades que te encantarán</title>
+<style>
+    body { margin:0; padding:0; font-family: Arial, sans-serif; background: #fff; color: #000; }
+    .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+    .personaje-table { width: 100%; border-spacing: 0; }
+    .personaje-image { width: 100%; height: auto; }
+    .personaje-title { font-weight: bold; margin: 10px 0 5px; }
+    .personaje-desc { font-size: 14px; margin-bottom: 10px; }
+    .button { display: inline-block; background: #000; color: #fff; text-decoration: none; padding: 12px 25px; border-radius: 30px; font-size: 14px; margin: 5px 0; }
+    .menu { text-align: center; margin: 20px 0; }
+    .menu a { margin: 0 8px; text-decoration: none; color: #000; font-weight: bold; font-size: 14px; }
+    .footer { font-size: 12px; color: #555; text-align: center; margin-top: 20px; }
+    .social a { color: #000; text-decoration: underline; font-weight: bold; }
+    .logo { font-size: 36px; font-weight: bold; text-align: center; margin: 30px 0; }
+</style>
+</head>
+<body>
+
+<div class="container">
+    
+    <p>Hola %%=v(@firstName)=%%, Elige entre los personajes mas poderosos:</p>
+
+    <!-- personaje lado a lado -->
+    <table class="personaje-table">
+        <tr>
+            <td align="center" width="50%">
+                <img src="Images\ERNR_IMG2.jpg" alt="Recluse" class="personaje-image">
+                <p class="personaje-title">Recluse</p>
+                <p class="personaje-ERNR">Una Bruja del Bosque Profundo que maneja hábilmente antiguas hechicerías.</p>
+                <a href="https://JosePG.com/Magos" class="button">Viajar como Recluse</a>
+            </td>
+            <td align="center" width="50%">
+                <img src="Images\ERNR_IMG1.jpg" alt="Wylder" class="personaje-image">
+                <p class="personaje-title">Wylder</p>
+                <p class="personaje-ERNR">Un espadachín nómada en búsqueda implacable de gloria.</p>
+                <a href="https://JosePG.com/Guerreros" class="button">Viajar como Wylder</a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Menú de categorías -->
+    <div class="menu">
+        <a href="https://JosePG.com/Noticias">Noticias</a>
+        <a href="https://JosePG.com/Personajes">Personajes</a>
+        <a href="https://JosePG.com/Explora">Explora</a>
+        <a href="https://JosePG.com/Contacto">Contacto</a>
+    </div>
+
+    <!-- Footer con info legal y enlaces -->
+    <div class="footer">
+                 nuevo ARPG independiente que destaca no solo un modo de un jugador<br>
+                 sino también una experiencia cooperativa de hasta tres jugadores.<br><br>
+        
+        <a href="https://JosePG.com/tiendas">Buscar Tienda</a> | 
+        <a href="https://JosePG.com/web">Ver en navegador</a> | 
+        <a href="%%unsub_center_url%%">Darse de baja</a><br><br>
+
+        <div class="social">
+            <a href="https://instagram.com/JosePG">Instagram</a>
+        </div>
+    </div>
+
+    <!-- Logo grande al final -->
+    <div class="logo">JOSEPINZONGRANADOS</div>
+
+</div>
+
+</body>
+</html>
