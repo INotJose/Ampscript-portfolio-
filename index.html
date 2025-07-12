@@ -8,11 +8,12 @@ SET @firstName = [FirstName]
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bienvenido a las tierras intermedias</title>
+<title>Bienvenido a Limbel</title>
 <style>
     body { margin:0; padding:0; font-family: Arial, sans-serif; background: #fff; color: #000; }
-    .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-    .personaje-table { width: 100%; border-spacing: 0; }
+    .container { max-width: 600px; margin: 0 auto; padding: 20px; background-color: #1d42a84d; border: 2px solid #4D5C89; border-radius: 20px ;  }
+    .mensaje-personalizado { font-size: 20px; margin-bottom: 10px; padding: 10px; }
+    .personaje-table { width: 100%; border-spacing: 0; border-radius: 5px 5px 20px 20px; border: 2px solid #4D5C89; padding: 5px; background-color: #1d42a84d; }
     .personaje-image { width: 100%; height: auto; }
     .personaje-title { font-weight: bold; margin: 10px 0 5px; }
     .personaje-desc { font-size: 14px; margin-bottom: 10px; }
@@ -28,7 +29,7 @@ SET @firstName = [FirstName]
 
 <div class="container">
     
-    <p>Hola %%=v(@firstName)=%%, Elige entre los personajes mas poderosos:</p>
+    <p><h1 class="mensaje-personalizado">Hola %%=v(@firstName)=%%, Elige entre los personajes mas poderosos:</h1></p>
 
     <!-- personaje lado a lado -->
     <table class="personaje-table">
