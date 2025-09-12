@@ -1,7 +1,6 @@
 %%[
-VAR @firstName, @promoCode
+VAR @firstName
 SET @firstName = [FirstName]
-SET @promoCode = "WELCOME5" /* este código puede venir de Data Extension */
 ]%%
 
 <!DOCTYPE html>
@@ -9,7 +8,7 @@ SET @promoCode = "WELCOME5" /* este código puede venir de Data Extension */
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bienvenido a nuestra comunidad</title>
+  <title>Email Campaign</title>
   <style>
     body {
       margin: 0;
@@ -22,82 +21,104 @@ SET @promoCode = "WELCOME5" /* este código puede venir de Data Extension */
     .container {
       max-width: 600px;
       margin: 0 auto;
-      padding: 20px;
       text-align: center;
     }
 
-    .hero {
-      background-color: #f6f6f6;
-      padding: 40px 20px;
-      border-radius: 10px;
+    .logo {
+      padding: 20px;
     }
 
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
-    p {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-
-    .promo-code {
-      background: #000;
-      color: #fff;
+    .headline {
+      font-size: 26px;
       font-weight: bold;
-      padding: 12px 20px;
-      display: inline-block;
-      margin: 20px 0;
-      border-radius: 5px;
-      font-size: 18px;
+      margin: 20px 0 10px;
+    }
+
+    .subtext {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #333;
     }
 
     .button {
       background: #ff6600;
       color: #fff;
-      padding: 15px 30px;
       text-decoration: none;
-      font-size: 18px;
+      padding: 15px 30px;
       font-weight: bold;
+      font-size: 16px;
       border-radius: 30px;
       display: inline-block;
+      margin: 20px 0;
+    }
+
+    .secondary {
+      padding: 30px 20px;
+      background-color: #f6f6f6;
+      border-radius: 10px;
+      margin: 20px;
     }
 
     .footer {
-      margin-top: 40px;
       font-size: 12px;
-      color: #666;
+      color: #555;
+      margin: 30px 0;
     }
 
     .footer a {
       color: #000;
       text-decoration: underline;
-      margin: 0 10px;
+      margin: 0 8px;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
+
+    <!-- HEADER -->
+    <div class="logo">
+      <img src="https://via.placeholder.com/150x50?text=LOGO" alt="Logo" width="150">
+    </div>
+
+    <!-- HERO -->
     <div class="hero">
-      <h1>Hola %%=v(@firstName)=%% 👋</h1>
-      <p>Gracias por unirte a nuestra comunidad.  
-      Queremos darte la bienvenida con un **descuento especial**.</p>
-
-      <div class="promo-code">Tu código: %%=v(@promoCode)=%%</div>
-
-      <a href="https://tusitio.com/usar-cupon" class="button">Usar mi Descuento</a>
+      <img src="https://via.placeholder.com/600x250?text=Hero+Image" alt="Hero">
     </div>
 
+    <!-- HEADLINE + CTA -->
+    <h1 class="headline">Hola %%=v(@firstName)=%%, ¡no te pierdas más oportunidades!</h1>
+    <p class="subtext">Cada compra aumenta tus chances de ganar.  
+    Activa tu cuenta hoy y empieza a sumar beneficios.</p>
+
+    <a href="https://tusitio.com/activar" class="button">Activar mi cuenta</a>
+
+    <!-- SECCIÓN SECUNDARIA -->
+    <div class="secondary">
+      <h2 class="headline">Más beneficios, más diversión 🎉</h2>
+      <p class="subtext">Participa en sorteos, recibe promociones exclusivas y aprovecha tus recompensas.</p>
+      <a href="https://tusitio.com/recompensas" class="button">Ver mis beneficios</a>
+    </div>
+
+    <!-- FOOTER -->
     <div class="footer">
-      <p>¿Necesitas ayuda?  
-      <a href="https://tusitio.com/contacto">Contáctanos</a> |
-      <a href="https://tusitio.com/faq">FAQ</a> |
-      <a href="%%unsub_center_url%%">Darse de baja</a></p>
+      <p>
+        <a href="https://tusitio.com/ayuda">Ayuda</a> |
+        <a href="https://tusitio.com/faq">FAQ</a> |
+        <a href="%%unsub_center_url%%">Darse de baja</a>
+      </p>
+      <p>©2024 Tu Empresa. Todos los derechos reservados.</p>
     </div>
+
   </div>
 
 </body>
 </html>
+
 
