@@ -1,80 +1,103 @@
 %%[
-VAR @firstName
+VAR @firstName, @promoCode
 SET @firstName = [FirstName]
+SET @promoCode = "WELCOME5" /* este código puede venir de Data Extension */
 ]%%
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bienvenido a Limveld</title>
-<style>
-    body { margin:0; padding:0; font-family: Arial, sans-serif; background: #fff; color: #000; }
-    .container { max-width: 600px; margin: 0 auto; padding: 20px; background-color: #1d42a84d; border: 2px solid #4D5C89; border-radius: 20px ;  }
-    .mensaje-personalizado { font-size: 20px; margin-bottom: 10px; padding: 10px; }
-    .personaje-table { width: 100%; border-spacing: 0; border-radius: 5px 5px 20px 20px; border: 2px solid #4D5C89; padding: 5px; background-color: #1d42a84d; }
-    .personaje-image { width: 100%; height: auto; }
-    .personaje-title { font-weight: bold; margin: 10px 0 5px; }
-    .personaje-desc { font-size: 14px; margin-bottom: 10px; }
-    .button { display: inline-block; background: #000; color: #fff; text-decoration: none; padding: 12px 25px; border-radius: 30px; font-size: 14px; margin: 5px 0; }
-    .menu { text-align: center; margin: 20px 0; }
-    .menu a { margin: 0 8px; text-decoration: none; color: #000; font-weight: bold; font-size: 14px; }
-    .footer { font-size: 12px; color: #555; text-align: center; margin-top: 20px; }
-    .social a { color: #000; text-decoration: underline; font-weight: bold; }
-    .logo { font-size: 36px; font-weight: bold; text-align: center; margin: 30px 0; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido a nuestra comunidad</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #000;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background-color: #f6f6f6;
+      padding: 40px 20px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .promo-code {
+      background: #000;
+      color: #fff;
+      font-weight: bold;
+      padding: 12px 20px;
+      display: inline-block;
+      margin: 20px 0;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    .button {
+      background: #ff6600;
+      color: #fff;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 30px;
+      display: inline-block;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #666;
+    }
+
+    .footer a {
+      color: #000;
+      text-decoration: underline;
+      margin: 0 10px;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    
-    <p><h1 class="mensaje-personalizado">Hola %%=v(@firstName)=%%, Elige entre los personajes mas poderosos:</h1></p>
+  <div class="container">
+    <div class="hero">
+      <h1>Hola %%=v(@firstName)=%% 👋</h1>
+      <p>Gracias por unirte a nuestra comunidad.  
+      Queremos darte la bienvenida con un **descuento especial**.</p>
 
-    <!-- personaje lado a lado -->
-    <table class="personaje-table">
-        <tr>
-            <td align="center" width="50%">
-                <img src="Images\ERNR_IMG2.jpg" alt="Recluse" class="personaje-image">
-                <p class="personaje-title">Recluse</p>
-                <p class="personaje-ERNR">Una Bruja del Bosque Profundo que maneja hábilmente antiguas hechicerías.</p>
-                <a href="https://JosePG.com/Magos" class="button">Viajar como Recluse</a>
-            </td>
-            <td align="center" width="50%">
-                <img src="Images\ERNR_IMG1.jpg" alt="Wylder" class="personaje-image">
-                <p class="personaje-title">Wylder</p>
-                <p class="personaje-ERNR">Un espadachín nómada en búsqueda implacable de gloria.</p>
-                <a href="https://JosePG.com/Guerreros" class="button">Viajar como Wylder</a>
-            </td>
-        </tr>
-    </table>
+      <div class="promo-code">Tu código: %%=v(@promoCode)=%%</div>
 
-    <!-- Menú de categorías -->
-    <div class="menu">
-        <a href="https://JosePG.com/Noticias">Noticias</a>
-        <a href="https://JosePG.com/Personajes">Personajes</a>
-        <a href="https://JosePG.com/Explora">Explora</a>
-        <a href="https://JosePG.com/Contacto">Contacto</a>
+      <a href="https://tusitio.com/usar-cupon" class="button">Usar mi Descuento</a>
     </div>
 
-    <!-- Footer con info legal y enlaces -->
     <div class="footer">
-                 nuevo ARPG independiente que destaca no solo un modo de un jugador<br>
-                 sino también una experiencia cooperativa de hasta tres jugadores.<br><br>
-        
-        <a href="https://JosePG.com/tiendas">Buscar Tienda</a> | 
-        <a href="https://JosePG.com/web">Ver en navegador</a> | 
-        <a href="%%unsub_center_url%%">Darse de baja</a><br><br>
-
-        <div class="social">
-            <a href="https://instagram.com/JosePG">Instagram</a>
-        </div>
+      <p>¿Necesitas ayuda?  
+      <a href="https://tusitio.com/contacto">Contáctanos</a> |
+      <a href="https://tusitio.com/faq">FAQ</a> |
+      <a href="%%unsub_center_url%%">Darse de baja</a></p>
     </div>
-
-    <!-- Logo grande al final -->
-    <div class="logo">JOSEPINZONGRANADOS</div>
-
-</div>
+  </div>
 
 </body>
 </html>
+
