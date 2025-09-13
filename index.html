@@ -9,149 +9,90 @@ SET @firstName = [FirstName]
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Email Campaign</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #000;
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .logo {
-      padding: 20px;
-    }
-
-    .hero img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .headline {
-      font-size: 26px;
-      font-weight: bold;
-      margin: 20px 0 10px;
-    }
-
-    .subtext {
-      font-size: 16px;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    .button {
-      background: #ff6600;
-      color: #fff;
-      text-decoration: none;
-      padding: 15px 30px;
-      font-weight: bold;
-      font-size: 16px;
-      border-radius: 30px;
-      display: inline-block;
-      margin: 20px 0;
-    }
-
-    .secondary {
-      padding: 30px 20px;
-      background-color: #f6f6f6;
-      border-radius: 10px;
-      margin: 20px;
-    }
-
-    .footer {
-      font-size: 12px;
-      color: #555;
-      margin: 30px 0;
-    }
-
-    .footer a {
-      color: #000;
-      text-decoration: underline;
-      margin: 0 8px;
-    }
-  </style>
 </head>
-<body>
+<body style="margin:0; padding:0; font-family: Arial, sans-serif; background: linear-gradient(180deg,#0d1235 0%, #1c1f4a 100%);">
 
-  <div class="container">
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+      <td align="center">
 
-    <!-- HEADER -->
-    <div class="logo">
-      <img src="https://via.placeholder.com/150x50?text=LOGO" alt="Logo" width="150">
-    </div>
+        <!-- CONTAINER -->
+        <table role="presentation" width="600" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto; background-color:#0d1235; color:#fff;">
+          
+          <!-- HERO IMAGE -->
+          <tr>
+            <td align="center">
+              <img src="https://via.placeholder.com/600x300?text=Hero+Image" alt="Hero Image" width="600" style="display:block; max-width:100%; height:auto;">
+            </td>
+          </tr>
 
-    <!-- HERO -->
-    <div class="hero">
-      <img src="https://via.placeholder.com/600x250?text=Hero+Image" alt="Hero">
-    </div>
+          <!-- HEADLINE + INTRO -->
+          <tr>
+            <td align="center" style="padding: 30px 20px; text-align:center;">
+              <h1 style="margin:0; font-size:26px; font-weight:900; text-transform:uppercase; color:#ffffff;">
+                NEW FORSAKEN<br>DETAILS REVEALED
+              </h1>
+              <p style="margin:15px 0; font-size:16px; line-height:1.4; color:#ffd600; font-weight:bold;">
+                Hola %%=v(@firstName)=%%, Game Informer presenta la nueva expansión Destiny 2: Forsaken.<br>
+                <a href="https://tusitio.com" style="color:#ffd600; text-decoration:underline;">Haz clic aquí para ver la nota completa</a>.
+              </p>
+              <p style="margin:0 0 20px; font-size:16px; line-height:1.5; color:#ffffff;">
+                A lo largo del mes compartiremos entrevistas, adelantos y más contenido exclusivo.
+              </p>
+              <!-- BOTÓN CTA 1 -->
+              <a href="https://tusitio.com/trailer" 
+                 style="display:inline-block; padding:15px 30px; background-color:#ffd600; color:#0d1235; 
+                        text-decoration:none; font-weight:bold; text-transform:uppercase; font-size:16px; 
+                        border-radius:4px;">
+                Watch Now
+              </a>
+            </td>
+          </tr>
 
-    <!-- HEADLINE + CTA -->
-    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color:#0d1235;">
-  <tr>
-    <td align="center" style="padding:40px 20px; font-family: Arial, sans-serif;">
+          <!-- SECONDARY IMAGE -->
+          <tr>
+            <td align="center" style="padding:40px 20px;">
+              <img src="https://via.placeholder.com/500x200?text=Secondary+Image" alt="Secondary" width="500" style="display:block; max-width:100%; height:auto;">
+            </td>
+          </tr>
 
-      <!-- HEADLINE -->
-      <h1 style="margin:0; font-size:28px; font-weight:900; text-transform:uppercase; color:#ffffff;">
-        NEW FORSAKEN<br>DETAILS REVEALED
-      </h1>
+          <!-- SECONDARY TEXT -->
+          <tr>
+            <td align="center" style="padding: 20px;">
+              <h2 style="margin:0 0 10px; font-size:22px; font-weight:900; color:#ffffff; text-transform:uppercase;">
+                Get the Ultimate Experience
+              </h2>
+              <p style="margin:0 0 20px; font-size:16px; color:#ffffff;">
+                Destiny 2 Forsaken – Digital Deluxe Edition ya está disponible para pre-orden.
+              </p>
+              <!-- BOTÓN CTA 2 -->
+              <a href="https://tusitio.com/comprar" 
+                 style="display:inline-block; padding:15px 30px; background-color:#ffd600; color:#0d1235; 
+                        text-decoration:none; font-weight:bold; text-transform:uppercase; font-size:16px; 
+                        border-radius:4px;">
+                Click Here
+              </a>
+            </td>
+          </tr>
 
-      <!-- SUBTEXT 1 amarillo -->
-      <p style="margin:20px 0 10px; font-size:16px; font-weight:bold; color:#ffd600; line-height:1.4;">
-        This month's Game Informer cover features the upcoming release of Destiny 2: Forsaken. 
-        <a href="https://tusitio.com" style="color:#ffd600; text-decoration:underline;">Click here to read the cover features.</a>
-      </p>
+          <!-- FOOTER -->
+          <tr>
+            <td align="center" style="padding:40px 20px; background-color:#0d1235;">
+              <img src="https://via.placeholder.com/120x40?text=LOGO" alt="Logo" width="120" style="margin-bottom:15px;">
+              <p style="font-size:12px; color:#aaa; margin:10px 0;">
+                <a href="https://tusitio.com" style="color:#aaa; text-decoration:none;">Home</a> | 
+                <a href="https://tusitio.com/support" style="color:#aaa; text-decoration:none;">Support</a> | 
+                <a href="%%unsub_center_url%%" style="color:#aaa; text-decoration:none;">Unsubscribe</a>
+              </p>
+              <p style="font-size:12px; color:#aaa; margin:10px 0;">
+                ©2024 Tu Empresa. Todos los derechos reservados.
+              </p>
+            </td>
+          </tr>
 
-      <!-- SUBTEXT 2 blanco -->
-      <p style="margin:0 0 20px; font-size:16px; color:#ffffff; line-height:1.5;">
-        Throughout the month, Game Informer will reveal new details about Forsaken featuring developer insights, 
-        interviews, videos, and much more.
-      </p>
-
-      <!-- SUBTEXT 3 blanco -->
-      <p style="margin:0 0 30px; font-size:16px; color:#ffffff;">
-        Watch the short trailer hosted by Game Informer!
-      </p>
-
-      <!-- CTA BUTTON -->
-      <a href="https://tusitio.com/ver-trailer" 
-         style="display:inline-block; padding:15px 30px; background-color:#ffd600; color:#0d1235; 
-                text-decoration:none; font-weight:bold; text-transform:uppercase; font-size:16px; 
-                border-radius:4px;">
-        Watch Now
-      </a>
-
-    </td>
-  </tr>
-</table>
-
-    <!-- SECCIÓN SECUNDARIA -->
-    <div class="secondary">
-      <h2 class="headline">Más beneficios, más diversión 🎉</h2>
-      <p class="subtext">Participa en sorteos, recibe promociones exclusivas y aprovecha tus recompensas.</p>
-      <a href="https://tusitio.com/recompensas" class="button">Ver mis beneficios</a>
-    </div>
-
-    <!-- FOOTER -->
-    <div class="footer">
-      <p>
-        <a href="https://tusitio.com/ayuda">Ayuda</a> |
-        <a href="https://tusitio.com/faq">FAQ</a> |
-        <a href="%%unsub_center_url%%">Darse de baja</a>
-      </p>
-      <p>©2024 Tu Empresa. Todos los derechos reservados.</p>
-    </div>
-
-  </div>
-
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
-
-
-
