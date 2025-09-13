@@ -1,3 +1,99 @@
+%%[
+VAR @firstName
+SET @firstName = [FirstName]
+]%%
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Campaign</title>
+</head>
+<body style="margin:0; padding:0; font-family: Arial, sans-serif; background: linear-gradient(180deg,#0d1235 0%, #1c1f4a 100%);">
+
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+      <td align="center">
+
+        <!-- CONTAINER -->
+        <table role="presentation" width="600" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto; background-color:#0d1235; color:#fff;">
+          
+          <!-- HERO IMAGE -->
+          <tr>
+            <td align="center">
+              <img src="https://via.placeholder.com/600x300?text=Hero+Image" alt="Hero Image" width="600" style="display:block; max-width:100%; height:auto;">
+            </td>
+          </tr>
+
+          <!-- HEADLINE + INTRO -->
+          <tr>
+            <td align="center" style="padding: 30px 20px; text-align:center;">
+              <h1 style="margin:0; font-size:26px; font-weight:900; text-transform:uppercase; color:#ffffff;">
+                NEW FORSAKEN<br>DETAILS REVEALED
+              </h1>
+              <p style="margin:15px 0; font-size:16px; line-height:1.4; color:#ffd600; font-weight:bold;">
+                Hola %%=v(@firstName)=%%, Game Informer presenta la nueva expansión Destiny 2: Forsaken.<br>
+                <a href="https://tusitio.com" style="color:#ffd600; text-decoration:underline;">Haz clic aquí para ver la nota completa</a>.
+              </p>
+              <p style="margin:0 0 20px; font-size:16px; line-height:1.5; color:#ffffff;">
+                A lo largo del mes compartiremos entrevistas, adelantos y más contenido exclusivo.
+              </p>
+              <!-- BOTÓN CTA 1 -->
+              <a href="https://tusitio.com/trailer" 
+                 style="display:inline-block; padding:15px 30px; background-color:#ffd600; color:#0d1235; 
+                        text-decoration:none; font-weight:bold; text-transform:uppercase; font-size:16px; 
+                        border-radius:4px;">
+                Watch Now
+              </a>
+            </td>
+          </tr>
+
+          <!-- SECONDARY IMAGE -->
+          <tr>
+            <td align="center" style="padding:40px 20px;">
+              <img src="https://via.placeholder.com/500x200?text=Secondary+Image" alt="Secondary" width="500" style="display:block; max-width:100%; height:auto;">
+            </td>
+          </tr>
+
+          <!-- SECONDARY TEXT -->
+          <tr>
+            <td align="center" style="padding: 20px;">
+              <h2 style="margin:0 0 10px; font-size:22px; font-weight:900; color:#ffffff; text-transform:uppercase;">
+                Get the Ultimate Experience
+              </h2>
+              <p style="margin:0 0 20px; font-size:16px; color:#ffffff;">
+                Destiny 2 Forsaken – Digital Deluxe Edition ya está disponible para pre-orden.
+              </p>
+              <!-- BOTÓN CTA 2 -->
+              <a href="https://tusitio.com/comprar" 
+                 style="display:inline-block; padding:15px 30px; background-color:#ffd600; color:#0d1235; 
+                        text-decoration:none; font-weight:bold; text-transform:uppercase; font-size:16px; 
+                        border-radius:4px;">
+                Click Here
+              </a>
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td align="center" style="padding:40px 20px; background-color:#0d1235;">
+              <img src="https://via.placeholder.com/120x40?text=LOGO" alt="Logo" width="120" style="margin-bottom:15px;">
+              <p style="font-size:12px; color:#aaa; margin:10px 0;">
+                <a href="https://tusitio.com" style="color:#aaa; text-decoration:none;">Home</a> | 
+                <a href="https://tusitio.com/support" style="color:#aaa; text-decoration:none;">Support</a> | 
+                <a href="%%unsub_center_url%%" style="color:#aaa; text-decoration:none;">Unsubscribe</a>
+              </p>
+              <p style="font-size:12px; color:#aaa; margin:10px 0;">
+                ©2024 Tu Empresa. Todos los derechos reservados.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>  
+  </table>
 <!-- Botón volver al inicio -->
 <div style="text-align:center; margin:40px 0;">
   <a href="index.html" 
@@ -6,3 +102,9 @@
     ← Volver al Portafolio
   </a>
 </div>
+</body>
+</html>
+
+
+
+
