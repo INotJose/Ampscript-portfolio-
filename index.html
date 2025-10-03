@@ -10,8 +10,9 @@ SET @firstName = [FirstName]
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Email Campaign</title>
 </head>
-<body style="margin:0; padding:0; font-family: Arial, sans-serif; background: linear-gradient(180deg,#e0e0e0 0%, #935c93 100%);">
-<!-- Header Navigation -->
+<body style="margin:0; padding:0; font-family: Arial, sans-serif; background: linear-gradient(180deg,#e0e0e0 0%, #AB93E2 100%);">
+
+
 <table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;">
   <tr>
     <!-- Columna izquierda () -->
@@ -25,7 +26,7 @@ SET @firstName = [FirstName]
                 text-decoration:none; 
                 padding:10px 20px; 
                 border-radius:30px;">
-        LinkedIn
+        HeroMode
       </a>
     </td>
 
@@ -56,19 +57,20 @@ SET @firstName = [FirstName]
     </td>
   </tr>
 </table>
-<!-- Barra de navegación -->
+
+
 <table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto; font-family:Arial, sans-serif; color:#000000;">
   <tr>
     <td style="padding:20px; text-align:left;">
       
       <!-- Título -->
-      <h2 style="margin:0; font-size:22px; font-weight:bold; line-height:28px; color:#000000;">
+      <h2 style="margin:0; font-size:18px; font-weight:bold; line-height:28px; color:#000000;">
         ✨ Find Your Next Design From Streetwear to Superheroes ✨
       </h2>
 
       <!-- Párrafo -->
       <p style="margin:16px 0; font-size:16px; line-height:22px; color:#333333;">
-        FStill searching for the right look? Whether you're commuting, exploring the city, 
+        %%=v(@firstName)=%% Still searching for the right look? Whether you're commuting, exploring the city, 
         or stepping into your favorite fandom, we’ve got styles made for you. 
         From sleek outerwear to geek-inspired designs, update your wardrobe with pieces 
         that last season after season.
@@ -77,9 +79,9 @@ SET @firstName = [FirstName]
 
       <!-- Botón centrado -->
       <div style="text-align:center; margin:20px 0;">
-        <a href="https://tusitio.com" 
-           style="display:inline-block; background-color:#000000; color:#ffffff; 
-                  font-size:16px; font-weight:bold; text-decoration:none; 
+        <a href="https://github.com/INotJose/Ampscript-portfolio-" 
+           style="display:inline-block; background-color:#AB93E2; color:#ffffff; 
+                  font-size:20px; font-weight:bold; text-decoration:none; 
                   padding:12px 30px; border-radius:30px;">
           Explore All Collections
 
@@ -89,7 +91,7 @@ SET @firstName = [FirstName]
 
       <!-- Imagen -->
       <div style="text-align:center; margin-top:20px;">
-        <img src="Assets/ERNR_IMG1.jpg" 
+        <img src="Assets/Modelo_600x800.png" 
              alt="Modelo con ropa" 
              width="600" 
              style="display:block; max-width:600px; width:100%; height:auto; border:0;">
@@ -99,17 +101,99 @@ SET @firstName = [FirstName]
   </tr>
 </table>
 
-    
+
+<table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto; font-family:Arial, sans-serif; color:#000000;">
+  
+  <!-- Grid de productos -->
+  <tr>
+    <td align="center">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><img src="Assets/Look1_400x600.png" width="200" alt="Look 1" style="display:block; width:100%; height:auto;"></td>
+          <td><img src="Assets/Look2_400x600.png" width="200" alt="Look 2" style="display:block; width:100%; height:auto;"></td>
+          <td><img src="Assets/Look3_400x600.png" width="200" alt="Look 3" style="display:block; width:100%; height:auto;"></td>
+        </tr>
+        <tr>
+          <td><img src="Assets/Look4_400x600.png" width="200" alt="Look 4" style="display:block; width:100%; height:auto;"></td>
+          <td><img src="Assets/Look5_400x600.png" width="200" alt="Look 5" style="display:block; width:100%; height:auto;"></td>
+          <td><img src="Assets/Look6_400x600.png" width="200" alt="Look 6" style="display:block; width:100%; height:auto;"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- Botón CTA -->
+  <tr>
+    <td align="center" style="padding:20px 0;">
+      <a href="https://www.behance.net/josepinzn1" 
+         style="display:inline-block; background-color:#AB93E2; color:#ffffff; 
+                font-size:16px; font-weight:bold; text-decoration:none; 
+                padding:12px 40px; border-radius:30px;">
+        Discover All Styles
+      </a>
+    </td>
+  </tr>
+
+  <!-- Menú inferior -->
+  <tr>
+    <td align="center" style="padding:15px 0;">
+      <a href="#" style="display:inline-block; margin:5px; padding:8px 15px; border:1px solid #fff; border-radius:20px; font-size:14px; text-decoration:none; color:#fff;">New Arrivals</a>
+      <a href="#" style="display:inline-block; margin:5px; padding:8px 15px; border:1px solid #AB93E2; border-radius:20px; font-size:14px; text-decoration:none; color:#AB93E2;">Women</a>
+      <a href="#" style="display:inline-block; margin:5px; padding:8px 15px; border:1px solid #AB93E2; border-radius:20px; font-size:14px; text-decoration:none; color:#AB93E2;">Men</a>
+      <a href="#" style="display:inline-block; margin:5px; padding:8px 15px; border:1px solid #AB93E2; border-radius:20px; font-size:14px; text-decoration:none; color:#AB93E2;">Bags</a>
+      <a href="#" style="display:inline-block; margin:5px; padding:8px 15px; border:1px solid #AB93E2; border-radius:20px; font-size:14px; text-decoration:none; color:#AB93E2;">Accessories</a>
+    </td>
+  </tr>
+
+  <!-- Separador -->
+  <tr>
+    <td style="border-top:1px solid #cccccc; padding:20px 0;" align="center">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td align="left" style="font-size:12px; line-height:18px; color:#555;">
+            Free shipping on orders over $100<br>
+            2-year product warranty<br>
+            30-day free returns
+          </td>
+          <td align="right" style="font-size:12px; line-height:18px; color:#555;">
+            <a href="#" style="color:#000; text-decoration:none;">Find a Store</a><br>
+            <a href="#" style="color:#000; text-decoration:none;">Visit Online Shop</a><br>
+            <a href="#" style="color:#000; text-decoration:none;">Unsubscribe</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- Instagram -->
+  <tr>
+    <td align="center" style="padding:20px 0;">
+      <a href="https://instagram.com" style="font-size:14px; font-weight:bold; color:#AB93E2; text-decoration:none;">
+        Follow us on Instagram
+      </a>
+    </td>
+  </tr>
+
+  <!-- Logo -->
+  <tr>
+    <td align="center" style="padding:20px 0;">
+      <img src="Assets/PlaceHolder_200x60.png" width="200" alt="HeroMode Logo" style="display:block; max-width:200px; height:auto;">
+    </td>
+  </tr>
+</table>
+ 
+
 <!-- Botón volver al inicio -->
 <div style="text-align:center; margin:40px 0;">
   <a href="game_email.html" 
-     style="display:inline-block; padding:12px 24px; background:#0f6c0a; color:#0d1235; 
+     style="display:inline-block; padding:12px 24px; background:#E89A5E; color:#fff; 
             text-decoration:none; font-weight:bold; border-radius:6px; text-transform:uppercase;">
     ← Visita otro Diseño inspirado en videojuegos!!
   </a>
 </div>
 </body>
 </html>
+
 
 
 
