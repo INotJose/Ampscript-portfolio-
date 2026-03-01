@@ -1,8 +1,183 @@
-<!-- Botón volver al inicio -->
-<div style="text-align:center; margin:40px 0;">
-  <a href="index.html" 
-     style="display:inline-block; padding:12px 24px; background:#ffd600; color:#0d1235; 
-            text-decoration:none; font-weight:bold; border-radius:6px; text-transform:uppercase;">
-    ← Volver al Portafolio
-  </a>
-</div>
+%%[
+VAR @firstName
+SET @firstName = [FirstName]
+]%%
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sale Email</title>
+</head>
+
+<body style="margin:0; padding:0; font-family:Arial, sans-serif; background-color:#052E2B;">
+
+<!-- CONTENEDOR GENERAL -->
+<table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+
+<!-- TOP BAR -->
+<tr>
+<td align="center" style="background-color:#E8DAD2; padding:8px; font-size:12px; color:#052E2B; letter-spacing:1px;">
+FREE SHIPPING ON ORDERS OVER $75
+</td>
+</tr>
+
+<!-- HERO -->
+<tr>
+<td align="center" style="padding:50px 20px;">
+
+<h1 style="margin:0; font-size:42px; color:#F29CC3;">
+GOING, GOING...
+</h1>
+
+<p style="margin-top:15px; font-size:16px; color:#FFFFFF;">
+%%=v(@firstName)=%%, low stock on some of our best sale pieces.
+</p>
+
+</td>
+</tr>
+
+<!-- 3 IMÁGENES DESTACADAS -->
+<tr>
+<td align="center" style="padding:20px;">
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+
+<td align="center">
+<img src="Assets/dog1.png" width="180" style="display:block; border-radius:12px;">
+</td>
+
+<td align="center">
+<img src="Assets/bag.png" width="180" style="display:block; border-radius:12px;">
+</td>
+
+<td align="center">
+<img src="Assets/dog2.png" width="180" style="display:block; border-radius:12px;">
+</td>
+
+</tr>
+</table>
+
+</td>
+</tr>
+
+<!-- TEXTO DESCRIPTIVO -->
+<tr>
+<td align="center" style="padding:30px; color:#E6E6E6; font-size:14px; line-height:20px;">
+Some of the cutest styles from our end-of-season sale are almost gone.<br><br>
+If you’ve been thinking about grabbing these for your pup, it might be your last chance.
+</td>
+</tr>
+
+<!-- GRID PRODUCTOS -->
+<tr>
+<td align="center" style="padding:20px;">
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+<tr>
+<td align="center" width="50%" style="padding:20px;">
+<img src="Assets/product1.png" width="220" style="display:block; border-radius:110px; background-color:#F4EFE6;">
+<p style="color:#FFFFFF; font-size:14px; margin-top:10px;">CIRQUE CARRIER</p>
+
+<a href="#" 
+style="display:inline-block; background-color:#F4A8C8; color:#052E2B; text-decoration:none; padding:10px 25px; border-radius:30px; font-weight:bold;">
+SHOP NOW
+</a>
+</td>
+
+<td align="center" width="50%" style="padding:20px;">
+<img src="Assets/product2.png" width="220" style="display:block; border-radius:110px; background-color:#F4EFE6;">
+<p style="color:#FFFFFF; font-size:14px; margin-top:10px;">CALM BANDANA</p>
+
+<a href="#" 
+style="display:inline-block; background-color:#F4A8C8; color:#052E2B; text-decoration:none; padding:10px 25px; border-radius:30px; font-weight:bold;">
+SHOP NOW
+</a>
+</td>
+</tr>
+
+</table>
+
+</td>
+</tr>
+
+<!-- BOTÓN PRINCIPAL -->
+<tr>
+<td align="center" style="padding:40px 0;">
+<a href="#" 
+style="display:inline-block; background-color:#F4A8C8; color:#052E2B; text-decoration:none; padding:14px 40px; border-radius:30px; font-weight:bold;">
+SHOP THE SALE
+</a>
+</td>
+</tr>
+
+<!-- CATEGORÍAS -->
+<tr>
+<td align="center" style="padding:40px 0; color:#F29CC3; font-size:24px;">
+Shop by Category
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="center"><img src="Assets/cat1.png" width="120"></td>
+<td align="center"><img src="Assets/cat2.png" width="120"></td>
+<td align="center"><img src="Assets/cat3.png" width="120"></td>
+</tr>
+</table>
+
+</td>
+</tr>
+
+<!-- INSTAGRAM -->
+<tr>
+<td align="center" style="padding:40px 0; color:#FFFFFF;">
+Follow us @yourstore
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="center"><img src="Assets/insta1.png" width="180"></td>
+<td align="center"><img src="Assets/insta2.png" width="180"></td>
+<td align="center"><img src="Assets/insta3.png" width="180"></td>
+</tr>
+</table>
+
+</td>
+
+
+<tr>
+  <div style="text-align:center; margin:40px 0;">
+    <a href="index.html" 
+       style="display:inline-block; padding:12px 24px; background:#E89A5E; color:#fff; 
+              text-decoration:none; font-weight:bold; border-radius:6px; text-transform:uppercase;">
+      ← Visita otro Diseño
+    </a>
+  </div>
+  <td align="center" style="background-color:#E8DAD2; padding:8px; font-size:12px; color:#052E2B; letter-spacing:1px;">
+    ← Visita otro Diseño
+  </td>
+</tr>
+
+</tr>
+
+<!-- FOOTER -->
+<tr>
+<td align="center" style="padding:30px; font-size:11px; color:#CCCCCC;">
+No longer want to receive these emails? Unsubscribe.
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>
